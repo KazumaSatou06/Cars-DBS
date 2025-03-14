@@ -13,7 +13,6 @@ body{background-color: black;}
         justify-content: flex-end;}
 
 
-
 #header img{width: 83px;
             height: 22.21px;
             margin: 20px 0;}
@@ -23,6 +22,17 @@ body{background-color: black;}
         color: #fff;
         text-align: center;
         margin: 20px 20px;}
+
+
+.bar-header1{width: 100%;
+        height: 8px;
+        background-color: #404040;
+        display: none;}
+
+.bar-header2{width: 100%;
+        height: 2px;
+        background-color: #404040;
+        margin-top: 5px;}
 
 .botao{width: 106px;
         height: 40px;
@@ -54,7 +64,7 @@ body{background-color: black;}
         margin-top: 32px;}
 
 
-.main-1 img{max-width: 850px;
+.main-1 img{min-width: 850px;
         height: 366px;}
 
 .text-main-1 h2{text-decoration: none;
@@ -158,7 +168,10 @@ body{background-color: black;}
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        margin-top: 55px;}
+        margin-top: 55px;
+        text-align: center;}
+
+#footer img{margin-top: 16px;}
 
 .sub-footer{width: 1310px;
         height: 100%;
@@ -174,7 +187,9 @@ body{background-color: black;}
 
 
 .sub-footer p{margin:0;
-                padding-bottom: 64px;}
+                padding-bottom: 64px;;}
+
+
 
 
 .black-bar{width: 1310px;
@@ -202,15 +217,44 @@ body{background-color: black;}
         display: flex;
         justify-content: space-between;}
 
-.terms{text-decoration: none;
+.terms a{text-decoration: none;
        width: 158px;
        height: 17px;
-        display: flex;}
+        display: flex;
+        color: black;}
 
-.Poli{text-decoration: none;
+.Poli a{text-decoration: none;
         width: 200px;
        height: 17px;
         margin-left: 630px;
-        text-align:inline;}
+        text-align:inline;
+        color: black;}
+
+
+.c{width: 350px;}
+
+@media screen and (max-width:1370px){
+        #header{width: 100%;
+                height: 160px;
+                display: flex;
+                flex-direction: column;}
+
+
+        #header img{height: 200px;
+                width: 300px;}
 
         
+        .sub-header a{font-size: 24px;
+                        display: flex;
+                        margin: 0 50px;}
+
+        .botao{margin-top: 12px;}
+
+        .bar-header2{margin-top: 50px;}
+
+        .bar-header1{display: block;
+                        margin-top: 16px;
+                        width: 100%;
+                        height: 8px;
+                        background-color: #404040;}
+}
